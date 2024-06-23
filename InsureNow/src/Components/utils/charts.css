@@ -1,0 +1,30 @@
+.chart-body{
+display:flex;
+flex-wrap: wrap;
+padding: 20px;
+
+}
+
+.bar-chart{
+  
+  width: 500px;
+  margin-inline-start: 50px;
+  
+}
+.head-charts{
+  margin-inline-start: 100px;
+  display: flex;
+}
+
+.dougnut-chart{
+  max-height: 250px;
+  max-width: 250px;
+  margin-inline: 30px;
+}
+
+.line-chart{
+ 
+  width: 550px;
+  margin-inline-start: 100px;
+
+}

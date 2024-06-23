@@ -1,0 +1,149 @@
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.layout{
+  display:flex;
+  flex-direction: column;
+}
+
+.main-container{
+  display: flex;
+}
+
+
+.header-client {
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+ 
+  display:flex;
+  background: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   justify-content: space-between;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  font-size: larger; 
+  color: darkgray;
+  text-align: center;
+  padding-block: 10px;
+  padding-inline: 30px;;
+}
+.logo-place{
+ display: flex;
+ align-items: center;
+ 
+}
+
+.timeline {
+  display: flex;
+  top: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.btn{
+ 
+  background-color: blue;
+  color: white;
+  padding-inline: 20px;
+  padding-block:10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s; /* Smooth transition */
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin: 0 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #007bff;
+}
+
+.sidebar {
+  /* position: fixed;
+  top:65px; */
+  width: 150px;
+  height: 100vh;
+  background-color:rgb(245, 245, 245); 
+ 
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  background-color:rgb(245, 245, 245); 
+}
+
+.sidebar ul li {
+  background-color: white;
+}
+
+.sidebar ul li a {
+  display: block;
+  color: #807d7d;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  background-color:rgb(245, 245, 245); ;
+  border-radius: 0;
+}
+
+.sidebar ul li a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.sidebar ul li.active a {
+  background-color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar ul li.active a::before,
+.sidebar ul li.active a::after {
+  content: '';
+  position: absolute; 
+  left: 0;
+  width: 100%;
+  height: 8px; /* Adjust height as needed */
+  background-color: rgb(245, 245, 245); /* Match sidebar background color */
+  z-index: -20;
+  
+}
+
+.sidebar ul li.active a::before {
+  top: -5px; /* Adjust to overlap with the previous item */
+  border-bottom-right-radius: 30px; /* Adjust as needed */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul li.active a::after {
+  bottom: -5px; /* Adjust to overlap with the next item */
+  border-top-right-radius: 30px; /* Adjust as needed */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.06);
+}
+
+.main-content {
+  margin-left: 250px; /* Adjust for the width of the sidebar */
+  padding: 20px;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  
+}

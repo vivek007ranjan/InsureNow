@@ -1,0 +1,97 @@
+.hero-body {
+  margin: 0;
+  padding: 0;
+  height:500px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: transparent;
+}
+
+.hero-section {
+  width:60vw;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  background: transparent;
+}
+
+.hexagon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.hexagon {
+  width: 80px; /* Width of one side of the hexagon */
+  height: 46.19px; /* Adjusted for perfect hexagon */
+  background-color: #007bff;
+  opacity: 0.4;
+  position: relative;
+  margin: 20px 20px; /* Adjust margin for spacing between hexagons */
+  transform: scale(1) opacity;
+  transition: transform 0.3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.hexagon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 23.09px solid #007bff; /* Adjusted for perfect hexagon */
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 23.09px solid #007bff; /* Adjusted for perfect hexagon */
+}
+
+.row-2 .hexagon:nth-child(even),
+.row-3 .hexagon:nth-child(odd),
+.row-4 .hexagon:nth-child(even) {
+  /* margin-left: 50px; Adjust for the staggered effect */
+}
+/* 
+.row-3 {
+  margin-top: -23.09px; /* Adjust to overlap with previous row */
+/* }
+
+.row-4 {
+  margin-top: -23.09px; /* Adjust to overlap with previous row 
+} 
+
+/* FontAwesome Icons */
+.hexagon .icon {
+  color: white; /* Icon color */
+  font-size: 24px; /* Icon size */
+}

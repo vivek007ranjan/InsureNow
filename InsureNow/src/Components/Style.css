@@ -1,0 +1,79 @@
+body{
+  margin:0;
+}
+.header{
+  display: flex;
+  height: 80px;
+  backdrop-filter: blur(10px);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  font-size: larger; 
+  color: white;
+  text-align: center;
+  
+}
+
+.headeritems{
+  display: flex;
+  flex-grow: 1;
+  margin-inline:30px;
+  justify-content: space-between;
+ align-items: center;
+}
+
+.btn{
+  background-color: blue;
+  color: white;
+  padding-inline: 20px;
+  padding-block:10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #0527a0; /* Darker shade on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Slightly smaller on click */
+  background-color: #004085; /* Even darker shade on click */
+}
+.home{
+  height: 100vh;
+  background-image: url(https://media.istockphoto.com/id/953782574/photo/businessman-standing-while-holding-and-red-umbrella-over-the-networking-connection-and-storm.jpg?s=1024x1024&w=is&k=20&c=I2EqEqAvGt8J0Eozk2X8WtN0qsBCI4chUtEjnDuKxx8=);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.dashboard{
+  height: 100vh;
+}
+.dashboard header{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color:darkgrey;
+ 
+}
+.navlinks{
+  display: flex;
+}
+.navlinks a{
+  text-decoration: none;
+  list-style-type: none;
+  margin-inline:25px;
+  font-weight: 600;
+  color:white;
+  transition: transform 0.2s;
+}
+.navlinks a.active-link{
+  color:red;
+  
+}
+
+.navlinks a:hover{
+  transform: scale(1.2); 
+  
+}
+
