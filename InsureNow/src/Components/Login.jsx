@@ -21,7 +21,7 @@ const Login = () => {
   useEffect(() => {
 
       // Check auth.user.role and navigate if necessary
-      if (auth.user && auth.user.role === 'ProductOwner') {
+      if (auth.user && auth.user.role === 'MainOwner') {
         console.log(`user:${auth.user.username} logged in.`)
         navigate('/Dashboard');
       } else if (auth.user && auth.user.role === 'Client') {

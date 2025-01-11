@@ -9,7 +9,7 @@ export const AuthProvider = ({children}) => {
   
    const login=({username,password}) =>{
     if(username==='admin' && password ==='portal'){
-      setUser({username,role:'ProductOwner'})
+      setUser({username,role:'MainOwner'})
     }
     else if (username!=='admin'&& password==='portal')
     setUser({username,role:'Client'})
